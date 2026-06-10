@@ -510,23 +510,30 @@ const timeType = escapeHtml(job["Time Type"] || "Not specified");
     }
 
     async function loadJobs() {
-      showLoading();
+  showLoading();
 
-      try {
-        const response = await fetch(API_URL);
-        const data = await response.json();
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({})
+    });
 
-        if (!Array.isArray(data)) {
-          throw new Error("Invalid data format");
-        }
+    const data = await response.json();
 
-        allJobs = sortJobsByDate(data);
-        renderJobs(allJobs);
-      } catch (error) {
-        console.error(error);
-        showError();
-      }
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid data format");
     }
+
+    allJobs = sortJobsByDate(data);
+    renderJobs(allJobs);
+  } catch (error) {
+    console.error(error);
+    showError();
+  }
+}
 
     loadJobs();
   </script>
