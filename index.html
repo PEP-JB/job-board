@@ -452,7 +452,9 @@ margin-left: auto;
 
       container.className = "jobs-grid";
       container.innerHTML = jobs.map(job => {
-        const title = escapeHtml(job.Title || "Untitled role");
+        const title = escapeHtml(
+  job.Title || job["Title"] || job.title || "Untitled role"
+);
         const company = escapeHtml(job.Company || "Unknown employer");
         const location = escapeHtml(job.Location || "Location not listed");
         const salary = escapeHtml(job.Salary || "Salary not listed");
