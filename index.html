@@ -476,13 +476,27 @@ const timeType = escapeHtml(job["Time Type"] || "Not specified");
         const postedText = daysAgoText(job.Date);
         const closingDate = job.ClosingDate || "";
 
-        const closingText = closingDate
-          ? new Date(closingDate).toLocaleDateString("en-AU", {
-            day: "numeric",
-            month: "short",
-            year: "numeric"
-          })
-          : "";
+        let closingText = "";
+
+if (closingDate) {
+  const excelDate = Number(closingDate);
+
+  if (!isNaN(excelDate)) {
+    const jsDate = new Date((excelDate - 25569) * 86400 * 1000);
+
+    closingText = jsDate.toLocaleDateString("en-AU", {
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    });
+  } else {
+    closingText = new Date(closingDate).toLocaleDateString("en-AU", {
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    });
+  }
+}
 
         const logoHtml = logo
           ? `<img src="${logo}" alt="${company} logo" class="company-logo" onerror="this.outerHTML='<div class=&quot;logo-placeholder&quot;>${getInitials(company)}</div>'">`
