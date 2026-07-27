@@ -473,6 +473,7 @@ const timeType = escapeHtml(job["Time Type"] || "Not specified");
         const featured = String(job.Featured).toUpperCase() === "TRUE";
         const logo = job.Logo ? String(job.Logo).trim() : "";
         const summary = escapeHtml(job.Summary || job.Description || "");
+        const status = escapeHtml(job.Status || "");
         const postedText = daysAgoText(job.Date);
 
         const logoHtml = logo
@@ -492,10 +493,11 @@ const timeType = escapeHtml(job["Time Type"] || "Not specified");
             </div>
 
             <div class="job-meta">
-              <span class="meta-pill">📍 ${location}</span>
-<span class="meta-pill">🕓 ${timeType}</span>
-              <span class="meta-pill">💰 ${salary}</span>
-            </div>
+                <span class="meta-pill">📍 ${location}</span>
+                <span class="meta-pill">🕓 ${timeType}</span>
+                <span class="meta-pill">💰 ${salary}</span>
+                ${status ? `<span class="meta-pill">📅 ${status}</span>` : ""}
+                </div>
 
             ${summary ? `<div class="job-description">${summary}</div>` : ""}
 
