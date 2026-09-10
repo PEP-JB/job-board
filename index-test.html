@@ -470,7 +470,8 @@ margin-left: auto;
         const salary = escapeHtml(job.Salary || "Salary not listed");
 const timeType = escapeHtml(job["Time Type"] || "Not specified");
         const link = job.Link || "#";
-        const featured = String(job.Featured).toUpperCase() === "Yes";
+        const featured = ["YES", "TRUE"].includes(String(job.Featured).toUpperCase()
+         );
         const logo = job.Logo ? String(job.Logo).trim() : "";
         const summary = escapeHtml(job.Summary || job.Description || "");
         const postedText = daysAgoText(job.Date);
