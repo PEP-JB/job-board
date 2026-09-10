@@ -400,7 +400,7 @@ margin-left: auto;
   </div>
 
   <script>
-    const API_URL = "https://default82b3e37e8171485db10b38dae7ed14.a8.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ef3923300a0648f7b5bb52b7c34bc03e/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=kzAC9aaTYRIXC-fUfvswhtuM6S6OIR_KKPjcqInbAtk";
+    const API_URL = "./jobs.json";
 
     let allJobs = [];
 
@@ -549,13 +549,7 @@ if (closingDate) {
   showLoading();
 
   try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({})
-    });
+    const response = await fetch(API_URL);
 
     const data = await response.json();
 
