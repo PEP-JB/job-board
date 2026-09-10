@@ -12,19 +12,5 @@
         "Summary": "This role is ideal for engineering students in their penultimate year, who are required to complete a Vocational Placement as part of their degree. \nIn this role, the student observes engineering activities and prepares rudimentary engineering calculations, entering structural models in analysis software and assisting senior engineering staff with structural design, sketches, site inspections and basic engineering reports or dilapidation surveys.\nUpon completion of placement, there is potential for the student to continue in an undergraduate role for the remainder of their degree.\nLength of placement: 60 days (approx. 12 weeks)",
         "Status": "Accepting Applications",
         "ClosingDate": "2026-10-31"
-    },
-    {
-        "JobTitle": "Mech Eng Test",
-        "Company": "This Company",
-        "Location": "Sutherland, NSW",
-        "Salary": "$80,000 per year",
-        "Time Type": "Full Time",
-        "Link": "https://www.testsite.com.au",
-        "Date": "2026-09-10",
-        "Featured": "No",
-        "Logo": null,
-        "Summary": "Testing all the things\n",
-        "Status": "Accepting Applications",
-        "ClosingDate": "2026-11-06"
     }
 ]
