@@ -1,0 +1,16 @@
+[
+  {
+    "JobTitle": "Graduate Engineer",
+    "Company": "Test Company",
+    "Location": "Sydney",
+    "Salary": "$70,000",
+    "Time Type": "Full Time",
+    "Link": "https://example.com",
+    "Date": "2026-09-10",
+    "Featured": "TRUE",
+    "Logo": "",
+    "Summary": "This is a test job.",
+    "Status": "Open",
+    "ClosingDate": "2026-10-01"
+  }
+]
