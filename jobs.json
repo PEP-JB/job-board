@@ -1,5 +1,5 @@
 [
-     {
+    {
         "JobTitle": "Khuda STEM Communicator",
         "Company": "University of Sydney - Faculty of Science",
         "Location": "On campus and various high schools in Western Sydney",
@@ -54,5 +54,19 @@
         "Summary": "Spend your summer building something real.  \n\nHelp us get our first dairy pilot running: algae and bacteria treating a farm's wastewater, all inside a shipping container.  \n\nPick your team to work with:\n*Electrical\n*Conotrols\n*Systems\n*Software\n*Biochemistry\n\nPerks: \n*Farm site visits\n*Team socials\n*Flexible hours\n*Paid roles for standouts\n\nPlacement dates: 1 December 2026 - 28 February 2027",
         "Status": "Accepting Applications",
         "ClosingDate": "2026-11-20"
+    },
+    {
+        "JobTitle": "Audit Unlocked",
+        "Company": "Deloitte",
+        "Location": "Sydney",
+        "Salary": "Paid",
+        "Time Type": "Part Time",
+        "Link": "https://www.deloitte.com/au/en/careers/students/audit-unlocked.html?nc=42",
+        "Date": "2026-10-29",
+        "Featured": "Yes",
+        "Logo": "https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte.svg",
+        "Summary": "Audit Unlocked gives students from science, engineering, arts, and non-accounting business disciplines the chance to apply the skills they’re already developing to a different kind of career.\n\nYou’ll join Deloitte in a permanent, part-time role, working three days a week while completing university. You’ll earn a competitive salary, contribute to real client work and learn alongside experienced professionals, coaches and mentors.\n\nTurn the skills you’re building at university into real-world experience. Audit Unlocked is a pathway for 2027 penultimate-year students (graduating in 2028) from non-accounting degrees to start a permanent, part-time career at Deloitte while completing their studies.\n\nGain real client experience, build your commercial capability and receive support to complete the Chartered Accountants ANZ Foundations Program.\n\nApplications open 22 October and close 4 November 2026.\nThe next Audit Unlocked intake starts 22 February 2027 in Sydney and Melbourne.",
+        "Status": "Accepting Applications",
+        "ClosingDate": "2026-11-04"
     }
 ]
