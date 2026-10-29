@@ -451,12 +451,22 @@ margin-left: auto;
     }
 
     function sortJobsByDate(jobs) {
-      return jobs.sort((a, b) => {
-        const dateA = new Date(a.Date);
-        const dateB = new Date(b.Date);
-        return dateB - dateA;
-      });
+  return jobs.sort((a, b) => {
+    const featuredA = String(a.Featured || "").toUpperCase() === "YES";
+    const featuredB = String(b.Featured || "").toUpperCase() === "YES";
+
+    // Featured jobs first
+    if (featuredA !== featuredB) {
+      return featuredB - featuredA;
     }
+
+    // Then newest jobs first
+    const dateA = new Date(a.Date);
+    const dateB = new Date(b.Date);
+    return dateB - dateA;
+  });
+}
+   
 
     function getInitials(name) {
       if (!name) return "•";
